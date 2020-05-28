@@ -16,7 +16,15 @@ The content below is a guide for a self-paced lab to understand the E2E Automate
 
 <a name="prereqs"></a>
 # Prerequisites
-draft-- have an azure account, create a workspace through the portal
+All you need is access to an [Azure subscription](https://azure.microsoft.com/free/) and an [Azure Machine Learning Workspace](https://docs.microsoft.com/azure/machine-learning/how-to-manage-workspace) that you'll create below.
+
+While it's not required, a basic understanding of Azure Machine Learning will be helpful for understanding the solution. The following resources can help introduce you to AML:
+
+1. [Azure Machine Learning Overview](https://azure.microsoft.com/services/machine-learning/)
+2. [What is automated machine learning?](https://docs.microsoft.com/azure/machine-learning/concept-automated-ml)
+3. [Automated ML Sample Notebooks on Github](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/automated-machine-learning)
+
+1. [Create a workspace](https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-1st-experiment-sdk-setup#create-a-workspace)
 
 # Lab agenda
 * Introduction to automated ML
