@@ -52,9 +52,6 @@ You create a workspace via the Azure portal, a web-based console for managing yo
 
 1. After you are finished configuring the workspace, select **Review + Create**. 
 
-   > [!Warning] 
-   > It can take several minutes to create your workspace in the cloud.
-
    When the process is finished, a deployment success message appears. 
  
  1. To view the new workspace, select **Go to resource**.
