@@ -1,6 +1,12 @@
 # MLADS 2020 LAB: Building a machine learning model using Automated Machine Learning in Azure ML
 The content below is a guide for a self-paced lab to understand the E2E Automated Machine Learning capabilities both through the Python code experience and UI no-code experience. 
 
+While it's not required, a basic understanding of Azure Machine Learning will be helpful for understanding the solution. The following resources can help introduce you to AML:
+
+1. [Azure Machine Learning Overview](https://azure.microsoft.com/services/machine-learning/)
+2. [What is automated machine learning?](https://docs.microsoft.com/azure/machine-learning/concept-automated-ml)
+3. [Automated ML Sample Notebooks on Github](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/automated-machine-learning)
+
 # Key Words
 - Automated ML, Azure Machine Learning, Hyperparameter tuning, Python, JupyerLab, No-code UI
 
@@ -8,21 +14,14 @@ The content below is a guide for a self-paced lab to understand the E2E Automate
 1. [Prerequisites](#prereqs)
 1. [Automated ML Introduction](#introduction)
 1. [The studio Introduction](#studio)
+1. [Lab Part 1. Train a regression model using the Automated ML UI](#automlUI)
 1. [Setup a Compute Instances](#compute)
-1. [Train in JupyertLab](#train)
-1. [Documentation](#documentation)
-1. [Running using python command](#pythoncommand)
-1. [Troubleshooting](#troubleshooting)
+1. [Lab Part 2. Train a classification model using Automated ML in JupyertLab](#train)
+1. [Next Steps](#complete)
 
 <a name="prereqs"></a>
 # Prerequisites
 All you need is access to an [Azure subscription](https://azure.microsoft.com/free/) and an [Azure Machine Learning Workspace](https://docs.microsoft.com/azure/machine-learning/how-to-manage-workspace) that you'll create below.
-
-While it's not required, a basic understanding of Azure Machine Learning will be helpful for understanding the solution. The following resources can help introduce you to AML:
-
-1. [Azure Machine Learning Overview](https://azure.microsoft.com/services/machine-learning/)
-2. [What is automated machine learning?](https://docs.microsoft.com/azure/machine-learning/concept-automated-ml)
-3. [Automated ML Sample Notebooks on Github](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/automated-machine-learning)
 
 1. [Create a workspace](https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-1st-experiment-sdk-setup#create-a-workspace)
 
