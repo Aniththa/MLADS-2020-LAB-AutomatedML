@@ -15,7 +15,7 @@ While it's not required, a basic understanding of Azure Machine Learning will be
 1. [Automated ML Introduction](#introduction)
 1. [The studio Introduction](#studio)
 1. [Lab Part 1. Train a regression model using the Automated ML UI](#automlUI)
-1. [Setup a Compute Instances](#compute)
+1. [Setup a Compute Instance](#compute)
 1. [Lab Part 2. Train a classification model using Automated ML in JupyertLab](#train)
 1. [Next Steps](#complete)
 
