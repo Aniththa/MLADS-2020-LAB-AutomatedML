@@ -10,7 +10,7 @@ While it's not required, a basic understanding of Azure Machine Learning will be
 # Key Words
 - Automated ML, Azure Machine Learning, Hyperparameter tuning, Python, JupyerLab, No-code UI
 
-# Table of Contents
+# Lab Agenda
 1. [Prerequisites](#prereqs)
 1. [Automated ML Introduction](#introduction)
 1. [The studio Introduction](#studio)
@@ -57,18 +57,11 @@ You create a workspace via the Azure portal, a web-based console for managing yo
  1. To view the new workspace, select **Go to resource**.
 
 
-# Lab agenda
-* Introduction to automated ML
-* The studio and model authoring experiences
-* Creating a compute instance
-* Running a python code automated ML experiment
-* Understanding forecasting parameters and concepts
-* Train, evaluate, and deploy your model
-* Easily perform these steps again in a no-code experience
-
 <a name="introduction"></a>
 # Automated ML introduction
 Automated machine learning (automated ML) builds high quality machine learning models for you by automating model and hyperparameter selection. Bring a labelled dataset that you want to build a model for, automated ML will give you a high quality machine learning model that you can use for predictions.
+
+![automlflow](images/flow2.pmg)
 
 If you are new to Data Science, automated ML will help you get jumpstarted by simplifying machine learning model building. It abstracts you from needing to perform model selection, hyperparameter selection and in one step creates a high quality trained model for you to use.
 
@@ -86,14 +79,41 @@ Automated ML is supported by three execution environments:
 * Local Conda environment
 * Azure Databricks 
 
-<a name="compute"></a>
-## Setup using Compute Instances - Jupyter based notebooks from a Azure Virtual Machine
-In this lab we will be focusing on the Compute Instance environment.
-
-1. On the left hand panel under the `Manage` section, click on `Compute`
-2. Click `+ New` to create a new compute. *It will take a couple minutes for this compute to to spin-up.*
-3. When the compute `Status` is `Running`, select the `JupyertLab` Application URI.
+<a name="automlUI"></a>
+## Lab Part 1. Train a regression model using the Automated ML UI
+In part 1 of the lab you will get to build an automated machine learning model using our UI. To get started head to [Lab 1](https://github.com/Aniththa/MLADS-2020-LAB-AutomatedML/blob/master/Lab%20Part%201%20-%20AutoML%20UI/Lab%20Part%201%20-%20AutoML%20UI.md) folder.
 
 <a name="compute"></a>
-## Run the lab on JupyterLab
-In this part of the lab we will be covering a python code 
+## Using Compute Instances - Jupyter based notebooks from a Azure Virtual Machine
+### 1.0 Creating an AzureML Compute Instance
+
+To start with, we will create a Azure ML Compute Instance. The Compute Instance is an Azure VM and will serve as an interactive workstation in the cloud that serves as a Jupyter server.
+
+1. Open [Azure Machine Learning Studio](https://ml.azure.com/).
+2. Navigate to 'Compute Instances' tab in Compute and click on 'New'.
+3. Choose some sufficiently unique name, keep the default VM type (STANDARD_DS3V2 -- a fairly inexpensive machine type costing about $0.27/hour) and click 'Create':
+![](./images/create_notebook_vm.png)
+
+See [here](https://docs.microsoft.com/en-us/azure/machine-learning/concept-compute-instance) for details on creating AzureML Compute Instances.
+
+**Note that this machine will keep running until you stop it from the portal.**
+
+### 2.0 Clone git Repository to Workspace storage
+
+To clone this git repository onto the workspace, follow the steps below:
+
+1. To get started, first navigate to the JupyterLab instance running on the Compute Instance by clicking on the JupyterLab link shown below:
+![](images/computes_view.png)
+
+1. After going through authentication, you will see the JupyterLab frontend. As you authenticate, make sure to use the same user to log in as was used to create the Compute Instance, or else your access will be denied. Next open an Terminal (either by File/New/Terminal, or by just clicking on Terminal in the Launcher Window).
+![](images/terminal.png)
+
+1. In the terminal window clone this repository by typing:
+```
+       https://github.com/Aniththa/MLADS-2020-LAB-AutomatedML.git
+```
+4. You will be prompted to provide your github username and for your password you will need to provide a personal access token. Please follow the steps here to [create a personal access token.](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) 
+
+<a name="train"></a>
+## Lab Part 2. Train a classification model using Automated ML in JupyertLab
+In this part of the lab we will be covering how you can train a classification model in a code first experience with AutoML. 
