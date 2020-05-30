@@ -61,7 +61,7 @@ You create a workspace via the Azure portal, a web-based console for managing yo
 # Automated ML introduction
 Automated machine learning (automated ML) builds high quality machine learning models for you by automating model and hyperparameter selection. Bring a labelled dataset that you want to build a model for, automated ML will give you a high quality machine learning model that you can use for predictions.
 
-![automlflow](images/flow2.pmg)
+![automlflow](images/flow2.png)
 
 If you are new to Data Science, automated ML will help you get jumpstarted by simplifying machine learning model building. It abstracts you from needing to perform model selection, hyperparameter selection and in one step creates a high quality trained model for you to use.
 
@@ -116,4 +116,5 @@ To clone this git repository onto the workspace, follow the steps below:
 
 <a name="train"></a>
 ## Lab Part 2. Train a classification model using Automated ML in JupyertLab
-In this part of the lab we will be covering how you can train a classification model in a code first experience with AutoML. 
+In this part of the lab we will be covering how you can train a classification model in a code first experience with AutoML. To get started open **Lab Part 2 - AutoML Python SDK.ipynb** from the  Lab 2 folder in jupyter lab.
+
