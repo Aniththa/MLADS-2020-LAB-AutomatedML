@@ -197,7 +197,7 @@ If you don't plan to use the resources you created, delete them, so you don't in
 <a name="nextstep"></a>
 # Next steps
 In this automated machine learning tutorial, you used Azure Machine Learning's automated ML interface to create and deploy a classification model. See these articles for more information and next steps:
-1. [Setup a compute instance to get ready for Lab part 2.](https://github.com/Aniththa/MLADS-2020-LAB-AutomatedML#setup-using-compute-instances---jupyter-based-notebooks-from-a-azure-virtual-machine)
+1. [Setup a compute instance to get ready for Lab part 2.](https://github.com/Aniththa/MLADS-2020-LAB-AutomatedML#using-compute-instances---jupyter-based-notebooks-from-a-azure-virtual-machine)
 
 <a name="learn"></a>
 # Learn More
