@@ -32,7 +32,7 @@ You create a workspace via the Azure portal, a web-based console for managing yo
 
 1. In the upper-left corner of Azure portal, select **+ Create a resource**.
 
-    ![Create a new resource](create-workspace.gif)
+    ![Create a new resource](images/create-workspace.gif)
 
 1. Use the search bar to find **Machine Learning**.
 
