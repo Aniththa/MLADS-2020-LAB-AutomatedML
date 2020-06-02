@@ -110,7 +110,7 @@ To clone this git repository onto the workspace, follow the steps below:
 
 1. In the terminal window clone this repository by typing:
 ```
-       https://github.com/Aniththa/MLADS-2020-LAB-AutomatedML.git
+       git clone https://github.com/Aniththa/MLADS-2020-LAB-AutomatedML.git
 ```
 4. You will be prompted to provide your github username and for your password you will need to provide a personal access token. Please follow the steps here to [create a personal access token.](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) 
 
